@@ -8,7 +8,7 @@ public class Check_If_Year_Is_Leap_Year {
 
         public static Year year;
 
-
+        //kom
         @BeforeAll
         public static void init() {
             year = new Year();
