@@ -43,10 +43,12 @@
                 <configuration>
                     <additionalClasspathElements>
                         <additionalClasspathElement>
-                            src/test/java
+                            /oligtest/src/test/java/Check_If_Year_Is_Leap_Year.java
                         </additionalClasspathElement>
                     </additionalClasspathElements>
+
                 </configuration>
+
             </plugin>
 
         </plugins>
@@ -57,9 +59,6 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
-
-
-
 
 
 </project>
