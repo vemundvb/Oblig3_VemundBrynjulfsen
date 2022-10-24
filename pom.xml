@@ -41,11 +41,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
-                    <additionalClasspathElements>
-                        <additionalClasspathElement>
-                            Check_If_Year_Is_Leap_Year.java
-                        </additionalClasspathElement>
-                    </additionalClasspathElements>
+                    <includes>
+                        <include>
+                            /**/*Check_If_Year_Is_Leap_Year.java
+                        </include>
+                    </includes>
 
                 </configuration>
 
