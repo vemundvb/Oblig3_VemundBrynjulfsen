@@ -95,6 +95,7 @@ Når man pusher noe opp til repositoriet, og klikker på "actions" tabben,
 kan man se at yml filen kjører.
 Under "Bygg og test" tabben kan man se at testene kjører:
 ![tester](https://user-images.githubusercontent.com/112019109/197818163-5360125a-e5c7-4aed-94c8-6cd6b17b8c8b.png)
+
 Dette viser at testene kjørte vellykket.
 
 
