@@ -1,7 +1,7 @@
 ## Oblig 3 Vemund Brynjulfsen ##
 
 
-Først hadde jeg filene fra opplig 2.
+Først hadde jeg filene fra obblig 2.
 Prosjektet ble gjort i maven, og brukte junit for testing.
 
 I pom.xml filen la jeg til følgende:
@@ -28,8 +28,8 @@ I taggene blir det referert til filen der testene ligger.
 Så opplastet jeg filene til github via intellj.
 
 Etter det gikk jeg inn i .github mappen, der jeg lagde en workflows fil.
-Inn i workflow filen lagde jeg en yml for kallt "bygg_og_test_workflow.yml".
-I filen skrev jeg følgende kode:
+I workflow filen lagde jeg en yml fil kallt "bygg_og_test_workflow.yml".
+I filen skrev jeg følgende:
 ```
 name: Oblig 3 workflow
 
@@ -54,14 +54,17 @@ jobs:
       run: mvn -B package --file pom.xml
 ```
 
+
+```
 on:
   push:
-  
-betyr at koden i filen vil skje når noe blir pushet til repositoriet.
+```
+betyr at filen vil kjøre når noe blir pushet til repositoriet.
 
-
+```
 runs-on: windows-latest
-betyr at koden liggende under blir utført på en windows maskin.
+```
+betyr at koden blie kjørt på en windows maskin.
 
 ```
     steps:
@@ -75,20 +78,20 @@ betyr at koden liggende under blir utført på en windows maskin.
 ```
 
 steps definerer det som skal skje.
-checkout kopierer koden koden i repositoriet til serveren.
-setup konfigurerer Java JDK med versjon 17, i temurin distribusjon.
+checkout kopierer koden i repositoriet til en github server.
+setup konfigurerer Java JDK med versjon 17, i temurin distribusjonen.
 
 Så kjører denne koden:
 ```
     - name: Bygg og test
       run: mvn -B package --file pom.xml
 ```
-Dette steppet blir navngitt "Bygg og test"
+Dette steppet blir navngitt "Bygg og test".
 Under er en kommando som bygger prosjektet med innholdet i pom.xml,
 og kjører testene definert med maven surefire.
 
 
-Når man pusher noe opp til repositoriet, og går til "actions",
+Når man pusher noe opp til repositoriet, og klikker på "actions" tabben,
 kan man se at yml filen kjører.
 Under "Bygg og test" tabben kan man se at testene kjører:
 ![tester](https://user-images.githubusercontent.com/112019109/197818163-5360125a-e5c7-4aed-94c8-6cd6b17b8c8b.png)
