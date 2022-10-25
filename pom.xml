@@ -46,11 +46,8 @@
                             /**/*Check_If_Year_Is_Leap_Year.java
                         </include>
                     </includes>
-
                 </configuration>
-
             </plugin>
-
         </plugins>
     </build>
 
